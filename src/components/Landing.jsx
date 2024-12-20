@@ -27,32 +27,32 @@ leadership.`;
       </div>
 
       <div className="flex flex-col items-center justify-center w-full h-full bg-black px-6 py-4 gap-4">
-        <p className="text-gray-50 italic text-lg font-bold mt-2">
+        <p className="text-gray-50 italic text-lg font-bold mt-2 text-center">
           Empowering Decisions with data driven insights
         </p>
  
-        <div className="flex flex-row items-start justify-between w-full mt-6 px-8">
+        <div className="flex flex-row items-start justify-between w-full mt-6 px-8"> 
         
-          <div className="flex flex-col items-center p-4 gap-4 justify-center shadow-md bg-white text-gray-600 rounded-md w-[35%] h-[400px]">
+          <div className="flex flex-col items-center p-4 gap-4 justify-center shadow-md bg-white text-gray-600 rounded-md md:w-[35%] w-full md:h-[400px] h-full">
             <p className="text-3xl font-bold">About Us</p>
             <p className="text-lg text-center">{description}</p>
           </div>
-          <img src={City} alt="City" className="h-[400px] w-auto object-cover" />
-          <img src={City2} alt="City" className="h-[400px] w-auto object-cover" />
+          <img src={City} alt="City" className="h-[400px]  w-auto object-cover md:block hidden" />
+          <img src={City2} alt="City" className="h-[400px] w-auto object-cover md:block hidden" />
 
 
         </div>
 
-        <div className="flex flex-row items-start justify-between w-[80%] mt-6 px-8">
+        <div className="flex flex-row items-start justify-between md:w-[80%] w-full mt-6 px-8">
 
-        <img src={City3} alt="City" className="h-[550px] w-auto object-cover" />
+        <img src={City3} alt="City" className="h-[550px] w-auto object-cover md:block hidden" />
 
-        <div className="flex flex-col gap-4 items-end justify-end w-[45%]">
-          <div className="flex flex-col items-center p-4 justify-center shadow-md bg-white text-gray-600 rounded-md w-full h-[300px]">
+        <div className="flex flex-col gap-4 items-end justify-end md:w-[45%] w-full">
+          <div className="flex flex-col items-center p-4 justify-center shadow-md bg-white text-gray-600 rounded-md w-full md:h-[300px] h-full">
             <p className="text-3xl font-bold">Vision</p>
             <p className="text-lg text-center">{description2}</p>
           </div>
-          <div className="flex flex-col items-center p-4 justify-center shadow-md bg-white text-gray-600 rounded-md w-full h-[300px]">
+          <div className="flex flex-col items-center p-4 justify-center shadow-md bg-white text-gray-600 rounded-md w-full md:h-[300px] h-full">
             <p className="text-3xl font-bold">Mission</p>
             <p className="text-lg text-center">{description3}</p>
           </div>
