@@ -1,4 +1,6 @@
-import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import Tooltip from "@mui/material/Tooltip";
 
 const Footer = () => {
   return (
@@ -6,22 +8,31 @@ const Footer = () => {
       <p>© 2021 Datos Biblio Inc. All rights reserved</p>
       <div className="flex space-x-4">
         <a
-          href="https://instagram.com"
-          target="_blank"
+           href="https://wa.me/923244787538"
+           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaInstagram className=" text-2xl" />
+          <FaWhatsapp className=" text-2xl" />
         </a>
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaFacebook className=" text-2xl" />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className=" text-2xl" />
-        </a>
+
+        <Tooltip title="coming soon" arrow>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram className=" text-2xl" />
+          </a>
+        </Tooltip>
+        <Tooltip title="coming soon" arrow>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className=" text-2xl" />
+          </a>
+        </Tooltip>
       </div>
     </div>
   );

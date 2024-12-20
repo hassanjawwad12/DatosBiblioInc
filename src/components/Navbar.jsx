@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaPortrait, FaEnvelope, FaBars, FaTimes } from "react-icons/fa";
 import { IoMdPeople } from "react-icons/io";
 import Logo from "../assets/datologo.png";
-import InfoPDF from "../assets/profile.pdf";
+import InfoPDF from "../assets/Company.pdf";
 import Email from "./Email";
 
 const Navbar = () => {
@@ -13,7 +13,7 @@ const Navbar = () => {
   const handlePortfolioDownload = () => {
     const link = document.createElement("a");
     link.href = InfoPDF;
-    link.download = "portfolio.pdf";
+    link.download = "company.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -34,7 +34,18 @@ const Navbar = () => {
         <span>Portfolio</span>
       </button>
 
-      <div
+      <a
+        className="flex items-center space-x-2 text-lg text-white hover:text-blue-200 transition-colors py-2 md:py-0"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=info@datosbiblio.com"
+        target="_blank"
+        rel="noopener noreferrer"      
+        onClick={() => setIsOpen(false)}
+      >
+        <FaEnvelope />
+        <span className="ml-2"> Send an Email</span>
+      </a>
+
+      {/* <div
         className="flex items-center space-x-2 text-lg text-white hover:text-blue-200 transition-colors py-2 md:py-0"
         onClick={() => {
           setIsModalOpen(true);
@@ -43,8 +54,8 @@ const Navbar = () => {
       >
         <FaEnvelope />
         <span>Contact Us</span>
-      </div>
-      <Email open={isModalOpen} handleClose={() => setIsModalOpen(false)} />
+      </div> */}
+      {/* <Email open={isModalOpen} handleClose={() => setIsModalOpen(false)} /> */}
 
       <Link
         to="/testimonials"
@@ -52,13 +63,13 @@ const Navbar = () => {
         onClick={() => setIsOpen(false)}
       >
         <IoMdPeople />
-        <span>Testimonials</span>
+        <span>Clients</span>
       </Link>
     </>
   );
 
   return (
-    <nav className="relative flex items-center justify-between p-4 bg-gray-500 shadow-md px-10">
+    <nav className="relative flex items-center justify-between p-4 bg-black shadow-md px-10">
       {/* Logo */}
       <div className="flex items-center">
         <Link to="/" onClick={() => setIsOpen(false)}>

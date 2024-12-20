@@ -1,10 +1,24 @@
 import React from "react";
 import Logo from "../assets/datologo.png";
+import City from "../assets/cityB.jpg";
+import City2 from "../assets/new.jpg";
+import City3 from "../assets/new2.jpg";
 
 const Landing = () => {
-  const description = `At Datos Biblio Inc, we specialize in collecting, analyzing, and providing valuable data to help businesses make informed, strategic decisions. Whether you're looking to optimize operations, understand customer behaviors, or unlock new growth opportunities, our comprehensive data solutions are tailored to meet your unique needs. We transform raw data into actionable insights that drive success.`;
+  const description = `DBI is a leading provider of data-driven solutions,
+specializing in data collection, reselling, and
+research services. Founded in Year 2021, we
+operate at the intersection of technology,
+analytics, and innovation, delivering actionable
+insights to empower businesses, B2B and B2C
+clients, and organizations.
+Our mission is to transform raw data into
+strategic assets, enabling smarter decisionmaking, enhanced efficiency, and market
+leadership.`;
 
-  const description2 = `Founded in 2021, Datos Biblio Inc began with a simple mission: to bridge the gap between businesses and the vast potential of data. As the demand for intelligent, data-driven decisions grew, we recognized the need for reliable, high-quality data services. Our journey started with a small team of data enthusiasts who believed that the right insights could shape the future of any business. Today, we’ve grown into a trusted partner for companies across various industries, providing them with the data and tools they need to stay competitive in an evolving market.`;
+  const description2 = `Our vision is to become the most reliable company in data-driven innovation, transforming the world of data. We aim to create a future where data is seamlessly integrated into every decision, empowering businesses, governments, and communities to thrive through smarter, more sustainable solutions.`;
+  
+  const description3 = `At Datos Biblio Inc, our mission is to harness the power of data to deliver actionable insights and innovative solutions that drive growth, efficiency, and informed decision-making. We are determined to collect reliable data with integrity and precision, while upholding the standards of privacy and compliance. `;
 
   return (
     <div className="bg-white text-zinc-700 flex flex-col items-center justify-center w-full h-full ">
@@ -12,23 +26,37 @@ const Landing = () => {
         <img src={Logo} alt="Logo" className="h-32 w-auto" />
       </div>
 
-      <div className="flex flex-col items-center justify-center w-full h-full bg-gray-500 px-6 py-4 gap-4">
-        <p className="text-black italic text-lg font-bold mt-2">
+      <div className="flex flex-col items-center justify-center w-full h-full bg-black px-6 py-4 gap-4">
+        <p className="text-gray-50 italic text-lg font-bold mt-2">
           Empowering Decisions with data driven insights
         </p>
-
-        <div className="flex flex-row items-start justify-start w-full">
-          <div className="flex flex-col items-center p-4 justify-center shadow-md bg-white text-slate-700 rounded-md w-[40%] h-[250px]">
-            <p className="text-2xl font-bold">About Us</p>
-            <p className="text-md text-center">{description}</p>
+ 
+        <div className="flex flex-row items-start justify-between w-full mt-6 px-8">
+        
+          <div className="flex flex-col items-center p-4 gap-4 justify-center shadow-md bg-white text-gray-600 rounded-md w-[35%] h-[400px]">
+            <p className="text-3xl font-bold">About Us</p>
+            <p className="text-lg text-center">{description}</p>
           </div>
+          <img src={City} alt="City" className="h-[400px] w-auto object-cover" />
+          <img src={City2} alt="City" className="h-[400px] w-auto object-cover" />
+
+
         </div>
 
-        <div className="flex flex-row items-start justify-end w-full">
-          <div className="flex flex-col items-center p-4 justify-center shadow-md bg-white text-slate-700 rounded-md w-[40%] h-[250px]">
-            <p className="text-2xl font-bold">History</p>
-            <p className="text-md text-center">{description2}</p>
+        <div className="flex flex-row items-start justify-between w-[80%] mt-6 px-8">
+
+        <img src={City3} alt="City" className="h-[550px] w-auto object-cover" />
+
+        <div className="flex flex-col gap-4 items-end justify-end w-[45%]">
+          <div className="flex flex-col items-center p-4 justify-center shadow-md bg-white text-gray-600 rounded-md w-full h-[300px]">
+            <p className="text-3xl font-bold">Vision</p>
+            <p className="text-lg text-center">{description2}</p>
           </div>
+          <div className="flex flex-col items-center p-4 justify-center shadow-md bg-white text-gray-600 rounded-md w-full h-[300px]">
+            <p className="text-3xl font-bold">Mission</p>
+            <p className="text-lg text-center">{description3}</p>
+          </div>
+        </div>
         </div>
       </div>
     </div>
