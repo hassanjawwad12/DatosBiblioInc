@@ -37,10 +37,7 @@ leadership.`;
             <p className="text-3xl font-bold">About Us</p>
             <p className="text-lg text-center">{description}</p>
           </div>
-          <img src={City} alt="City" className="h-[400px]  w-auto object-cover md:block hidden" />
           <img src={City2} alt="City" className="h-[400px] w-auto object-cover md:block hidden" />
-
-
         </div>
 
         <div className="flex flex-row items-start justify-between md:w-[80%] w-full mt-6 px-8">
