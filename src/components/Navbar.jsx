@@ -13,7 +13,7 @@ const Navbar = () => {
   const handlePortfolioDownload = () => {
     const link = document.createElement("a");
     link.href = InfoPDF;
-    link.download = "company.pdf";
+    link.download = "DBI Company Profile.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
